@@ -1,0 +1,166 @@
+/*.navbar{
+  background-color: #F2F2F2;
+}*/
+
+.navbar-brand{
+  padding-top: 10px;
+}
+
+.navbar-form #searchInput{
+  width: 150px;
+  margin-left: 50px;
+}
+
+/*------------- Carousel ----------------*/
+
+/*.container{
+  position: relative;
+}*/
+
+#myCarousel{
+  margin-top: 60px;
+}
+
+#myCarousel .carousel-inner .item{
+  height: 400px;
+}
+
+#myCarousel .carousel-inner #slide1{
+  background: url("../image/hero_med1.jpg") top center no-repeat;
+}
+
+#myCarousel .carousel-inner #slide2{
+  background: url("../image/hero_med1.jpg") top center no-repeat;
+}
+
+#myCarousel .carousel-inner #slide3{
+  background: url("../image/hero_med1.jpg") top center no-repeat;
+}
+
+#myCarousel .carousel-inner #slide1 h4{
+  font-size: 40px;
+  margin-top: -150px;
+  color: #D0FA58;
+}
+
+#myCarousel .carousel-inner #slide1 p{
+  font-size: 25px;
+  color: #00FF00;
+}
+
+/*----------------- Body ---------------------*/
+/*#body h3{
+  font-weight: bold;
+} */
+
+#body p{
+  text-align: justify;
+}
+
+/*------------------- Web Insight ---------------------*/
+
+#web_insight{
+  margin-top: 20px;
+}
+
+#web_insight h2{
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+#web_insight #web_insight_image{
+  margin-top: 20px;
+}
+
+/*------------------ Statistics ------------------*/
+
+#statistics{
+  margin-top: 20px;
+}
+
+#statistics h2{
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+#statistics #statistics_image{
+  margin-top: 20px;
+}
+
+/*----------------- Footer -----------------*/
+
+footer{
+  margin-top: 20px;
+  background-color: lightgrey;
+}
+
+footer h4{
+  font-weight: bold;
+  margin-bottom:15px;
+}
+
+ul.unstyled{
+  padding-left: 0;
+}
+
+ul.unstyled li{
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+#footer .likes ul li{
+  display: inline;
+}
+
+#footer .likes img{
+  width: 25px;
+  height: 25px;
+}
+
+ /*------------------- Media Queries -------------------*/
+
+@media only screen and (max-width: 768px) {
+  #myCarousel .item{
+    height: 310px;
+  }
+
+  #myCarousel .carousel-inner #slide1{
+    background: url("../image/hero_small1.jpg") top center no-repeat;
+  }
+
+  #myCarousel .carousel-inner #slide2{
+    background: url("../image/hero_small1.jpg") top center no-repeat;
+  }
+
+  #myCarousel .carousel-inner #slide3{
+    background: url("../image/hero_small1.jpg") top center no-repeat;
+  }
+
+  #myCarousel .carousel-inner #slide1 p{
+    font-size: 16px;
+
+  #myCarousel .carousel-inner #slide1 h4{
+      font-size: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #myCarousel .item{
+    height: 500px;
+  }
+  #myCarousel .carousel-inner #slide1{
+    background: url("../image/hero_large1.jpg") top center no-repeat;
+  }
+
+  #myCarousel .carousel-inner #slide2{
+    background: url("../image/hero_large1.jpg") top center no-repeat;
+  }
+
+  #myCarousel .carousel-inner #slide3{
+    background: url("../image/hero_large1.jpg") top center no-repeat;
+  }
+}
+
+/*---------------- General ------------------*/
+.siteName{
+  color: red;
+}
