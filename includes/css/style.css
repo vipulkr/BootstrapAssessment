@@ -1,6 +1,6 @@
-/*.navbar{
-  background-color: #F2F2F2;
-}*/
+.navbar{
+  background-color: lightgrey;
+}
 
 .navbar-brand{
   padding-top: 10px;
@@ -67,10 +67,15 @@
   padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
-
+#web_insight #web_insight_content{
+}
 #web_insight #web_insight_image{
   margin-top: 20px;
 }
+
+/*.thumbnail{
+  position: relative;
+}*/
 
 /*------------------ Statistics ------------------*/
 
@@ -119,8 +124,8 @@ ul.unstyled li{
 
  /*------------------- Media Queries -------------------*/
 
-@media only screen and (max-width: 768px) {
-  #myCarousel .item{
+@media(max-width: 768px) {
+  #myCarousel .carousel-inner .item{
     height: 310px;
   }
 
@@ -138,13 +143,38 @@ ul.unstyled li{
 
   #myCarousel .carousel-inner #slide1 p{
     font-size: 16px;
-
+}
   #myCarousel .carousel-inner #slide1 h4{
       font-size: 24px;
 }
+  #statistics #statistics_image img{
+    float: left !important;
+  }
+}
 
-@media only screen and (min-width: 1200px) {
-  #myCarousel .item{
+@media(max-width: 320px){
+    #statistics #statistics_image img, #web_insight #web_insight_image img{
+      width: 200px;
+    }
+    #myCarousel .carousel-inner .item{
+      height: 250px;
+    }
+}
+
+@media(max-width: 235px){
+    #statistics #statistics_image img, #web_insight #web_insight_image img{
+      width: 150px;
+    }
+    #myCarousel .carousel-inner .item{
+      height: 200px;
+    }
+    footer .col-xs-6{
+      width: 100%;
+    }
+}
+
+@media(min-width: 1200px) {
+  #myCarousel .carousel-inner .item{
     height: 500px;
   }
   #myCarousel .carousel-inner #slide1{

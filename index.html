@@ -10,6 +10,21 @@
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+  	<!-- First try for the online version of jQuery-->
+  	<script src="http://code.jquery.com/jquery.js"></script>
+
+  	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+  	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+  	<!-- Bootstrap JS -->
+  	<script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+
+  	<!-- Custom JS -->
+  	<!-- <script src="includes/js/script.js"></script> -->
+
     <div class="container" id="main">
       <div class="navbar navbar-fixed-top">
         <div class="container">
@@ -22,7 +37,7 @@
           </button>
 
           <a href="/" class="navbar-brand"><img src="includes/image/logo.jpg" alt="ST@RWebS"></a>
-          
+
           <div class="navbar-collapse collapse navbar-responsive-collapse">   <!-- navbar-responsive-collapse -->
             <ul class="nav navbar-nav pull-right">
               <li class="active">
@@ -94,17 +109,17 @@
 				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
       </div> <!-- end myCarousel -->
       <div class="row" id="body">
-        <div class="col-md-4" id="domain_registration">
+        <div class="col-md-4 col-lg-4" id="domain_registration">
           <h3>Domain Registration</h3>
           <p>Register your Domain instantly with best Price, enquire us now</p>
           <button class="btn btn-primary">Read More</button>
         </div>
-        <div class="col-md-4" id="web_design">
+        <div class="col-md-4 col-lg-4" id="web_design">
           <h3>Web Design</h3>
           <p>We design the Website with latest technology and offer a creative technology solution</p>
           <button class="btn btn-primary">Read More</button>
         </div>
-        <div class="col-md-4" id="website_maintenance">
+        <div class="col-md-4 col-lg-4" id="website_maintenance">
           <h3>Website Maintenance</h3>
           <p>Get Maintain your website by our professional with fresh content, images</p>
           <button class="btn btn-primary">Read More</button>
@@ -112,10 +127,7 @@
       </div> <!-- end body -->
 
       <div class="row" id="web_insight">
-        <div class="col-md-4" id="web_insight_image">
-          <img src="includes/image/statistic.jpg" alt="Web Insight">
-        </div>
-        <div class="col-md-8" id="web_insight_content">
+        <div class="col-md-8 col-lg-8 col-sm-6 pull-right" id="web_insight_content">
           <h2>Insight to <span class="siteName">ST@RWebS </span></h2>
           <p> <span class="siteName">ST@RWebS </span>, the name synonymous with Website Maintenance and web support,
             offers focused services that ensure your website stay well supported,
@@ -125,16 +137,19 @@
              concentrate on your business.</p>
              <button class="btn btn-primary">Read More</button>
         </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pull-left" id="web_insight_image">
+          <img src="includes/image/statistic.jpg" alt="Web Insight">
+        </div>
       </div> <!-- end web_insight -->
 
       <div class="row" id="statistics">
-        <div class="col-md-8" id="statistics_content">
+        <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12" id="statistics_content">
           <h2><span class="siteName">ST@RWebS </span>Annual Statistics</h2>
           <p><span class="siteName">ST@RWebS </span> is the second fastes growing startup in India. We are investing</p>
           <button class="btn btn-primary">Read More</button>
         </div>
-        <div class="col-md-4" id="statistics_image">
-          <img src="includes/image/revenue.jpg" alt="Revenue">
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" id="statistics_image">
+          <img src="includes/image/revenue.jpg" alt="Revenue" class="pull-right">
         </div>
       </div>
 
@@ -142,41 +157,41 @@
     <footer>
       <div class="container">
         <div class="row" id="footer">
-          <div class="col-md-3">
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
             <h4>ST@RWebS</h4>
             <ul class="unstyled">
-              <li>Testimonials</li>
-              <li>Refund Policy</li>
-              <li>Privacy Policy</li>
-              <li>Term of Services</li>
-              <li>Disclaimer</li>
-              <li>Feedback</li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#"> Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term of Services</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Feedback</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
             <h4>Web Design</h4>
             <ul class="unstyled">
-              <li>Mobile Applications</li>
-              <li>Customised Workflow Automations</li>
-              <li>Cutomised Web Based Applications</li>
+              <li><a href="#">Mobile Applications</a></li>
+              <li><a href="#">Customised Workflow Automations</a></li>
+              <li><a href="#">Cutomised Web Based Applications</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
             <h4>Web Maintenance</h4>
             <ul class="unstyled">
-              <li>Website Maintenance</li>
-              <li>Project Management</li>
-              <li>Claud Infrastructure Management</li>
-              <li>Website Redesign</li>
+              <li><a href="#">Website Maintenance</a></li>
+              <li><a href="#">Project Management</a></li>
+              <li><a href="#">Claud Infrastructure Management</a></li>
+              <li><a href="#">Website Redesign</a></li>
             </ul>
           </div>
-          <div class="col-md-3 likes">
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 likes">
             <h4>Like us on</h4>
             <ul class="unstyled">
-              <li><img src="includes/image/logo_fb.png" alt="FB" class="img-rounded"></li>
-              <li><img src="includes/image/logo_twitter.png" alt="Twitter" class="img-rounded"></li>
-              <li><img src="includes/image/logo_g+.png" alt="Google+" class="img-rounded"></li>
-              <li><img src="includes/image/logo_linkedin.png" alt="Linkedin" class="img-rounded"></li>
+              <li><a href="#"><img src="includes/image/logo_fb.png" alt="FB" class="img-rounded"></a></li>
+              <li><a href="#"><img src="includes/image/logo_twitter.png" alt="Twitter" class="img-rounded"></a></li>
+              <li><a href="#"><img src="includes/image/logo_g+.png" alt="Google+" class="img-rounded"></a></li>
+              <li><a href="#"><img src="includes/image/logo_linkedin.png" alt="Linkedin" class="img-rounded"></a></li>
             </ul>
           </div>
         </div>
