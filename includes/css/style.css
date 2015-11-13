@@ -1,4 +1,4 @@
-.navbar{
+/*.navbar{
   background-color: lightgrey;
 }
 
@@ -9,6 +9,10 @@
 .navbar-form #searchInput{
   width: 150px;
   margin-left: 50px;
+}*/
+
+.siteLogo{
+  font-family: siteLogo;
 }
 
 /*------------- Carousel ----------------*/
@@ -37,13 +41,13 @@
   background: url("../image/hero_med1.jpg") top center no-repeat;
 }
 
-#myCarousel .carousel-inner #slide1 h4{
+#myCarousel .carousel-inner h4{
   font-size: 40px;
   margin-top: -150px;
   color: #D0FA58;
 }
 
-#myCarousel .carousel-inner #slide1 p{
+#myCarousel .carousel-inner p{
   font-size: 25px;
   color: #00FF00;
 }
@@ -67,8 +71,8 @@
   padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
-#web_insight #web_insight_content{
-}
+/*#web_insight #web_insight_content{
+}*/
 #web_insight #web_insight_image{
   margin-top: 20px;
 }
@@ -96,7 +100,8 @@
 
 footer{
   margin-top: 20px;
-  background-color: lightgrey;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
 }
 
 footer h4{
@@ -141,14 +146,21 @@ ul.unstyled li{
     background: url("../image/hero_small1.jpg") top center no-repeat;
   }
 
-  #myCarousel .carousel-inner #slide1 p{
-    font-size: 16px;
-}
-  #myCarousel .carousel-inner #slide1 h4{
-      font-size: 24px;
-}
   #statistics #statistics_image img{
     float: left !important;
+  }
+
+  footer #web_maintenance{
+    clear: both;
+  }
+
+  #myCarousel .carousel-inner h4{
+    font-size: 35px;
+    margin-top: -100px;
+  }
+
+  #myCarousel .carousel-inner p{
+    font-size: 20px;
   }
 }
 
@@ -159,6 +171,31 @@ ul.unstyled li{
     #myCarousel .carousel-inner .item{
       height: 250px;
     }
+    /*.navbar-brand img{
+      width: 100px;
+    }*/
+    /*button.navbar-toggle{
+      margin-right: 2px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }*/
+
+    /*ul.navbar-nav{
+      display: block;
+      text-align: left;
+    }*/
+
+    .navbar-form #searchInput{
+      width: 100px;
+      /*margin-left: 50px;*/
+    }
+
+    /*#myCarousel .carousel-inner h4{
+      font-size: 30px;
+      margin-top: -100px;
+      color: #D0FA58;
+    }*/
+
 }
 
 @media(max-width: 235px){
@@ -190,7 +227,19 @@ ul.unstyled li{
   }
 }
 
+/*@media (max-width: 767px){
+  .navbar-responsive-collapse{
+    display: block;
+    clear: both;
+  }
+}*/
+
 /*---------------- General ------------------*/
 .siteName{
   color: red;
+}
+
+@font-face {
+    font-family: siteLogo;
+    src: url(../fonts/Oswald-Bold.ttf);
 }
