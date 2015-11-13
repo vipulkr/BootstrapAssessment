@@ -12,7 +12,8 @@
 }*/
 
 .siteLogo{
-  font-family: siteLogo;
+  font-family: OpenSans;
+  font-size: 45px;
 }
 
 /*------------- Carousel ----------------*/
@@ -128,7 +129,16 @@ ul.unstyled li{
 }
 
  /*------------------- Media Queries -------------------*/
-
+@media(max-width: 767px){
+ footer #web_maintenance{
+   clear: both;
+ }
+ }
+ @media (max-width: 992px){
+   .siteLogo{
+     font-size: 30px;
+   }
+ }
 @media(max-width: 768px) {
   #myCarousel .carousel-inner .item{
     height: 310px;
@@ -146,12 +156,18 @@ ul.unstyled li{
     background: url("../image/hero_small1.jpg") top center no-repeat;
   }
 
+/*#statistics #statistics_image{
+
+}*/
+
   #statistics #statistics_image img{
-    float: left !important;
+    /*float: left !important;*/
+    float: none !important;
   }
 
-  footer #web_maintenance{
-    clear: both;
+  #web_insight #web_insight_image img{
+    /*float: left !important;*/
+    float: none !important;
   }
 
   #myCarousel .carousel-inner h4{
@@ -188,6 +204,10 @@ ul.unstyled li{
     .navbar-form #searchInput{
       width: 100px;
       /*margin-left: 50px;*/
+    }
+
+    .siteLogo{
+      font-size: 20px;
     }
 
     /*#myCarousel .carousel-inner h4{
@@ -227,12 +247,7 @@ ul.unstyled li{
   }
 }
 
-/*@media (max-width: 767px){
-  .navbar-responsive-collapse{
-    display: block;
-    clear: both;
-  }
-}*/
+
 
 /*---------------- General ------------------*/
 .siteName{
@@ -240,6 +255,6 @@ ul.unstyled li{
 }
 
 @font-face {
-    font-family: siteLogo;
-    src: url(../fonts/Oswald-Bold.ttf);
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
 }
