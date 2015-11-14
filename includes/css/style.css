@@ -4,12 +4,12 @@
 
 .navbar-brand{
   padding-top: 10px;
-}
+}*/
 
 .navbar-form #searchInput{
   width: 150px;
-  margin-left: 50px;
-}*/
+  /*margin-left: 50px;*/
+}
 
 .siteLogo{
   font-family: OpenSans;
@@ -35,30 +35,28 @@
 }
 
 #myCarousel .carousel-inner #slide2{
-  background: url("../image/hero_med1.jpg") top center no-repeat;
+  background: url("../image/Web_designing_med2.png") top center no-repeat;
 }
 
 #myCarousel .carousel-inner #slide3{
-  background: url("../image/hero_med1.jpg") top center no-repeat;
+  background: url("../image/Web_maintenance_med3.png") top center no-repeat;
 }
 
 #myCarousel .carousel-inner h4{
-  font-size: 40px;
-  margin-top: -150px;
+  font-size: 50px;
+  margin-top: -250px;
   color: #D0FA58;
 }
 
 #myCarousel .carousel-inner p{
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
   color: #00FF00;
 }
 
-/*----------------- Body ---------------------*/
-/*#body h3{
-  font-weight: bold;
-} */
+/*----------------- Info ---------------------*/
 
-#body p{
+#info p{
   text-align: justify;
 }
 
@@ -124,61 +122,80 @@ ul.unstyled li{
 }
 
 #footer .likes img{
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 5px;
 }
 
  /*------------------- Media Queries -------------------*/
-@media(max-width: 767px){
- footer #web_maintenance{
-   clear: both;
- }
- }
+
  @media (max-width: 992px){
    .siteLogo{
      font-size: 30px;
+   }
+   #myCarousel .carousel-inner #slide1{
+     background: url("../image/hero_small1.jpg") top center no-repeat;
+   }
+
+   #myCarousel .carousel-inner #slide2{
+     background: url("../image/Web_designing_small2.png") top center no-repeat;
+   }
+
+   #myCarousel .carousel-inner #slide3{
+     background: url("../image/Web_maintenance_small3.png") top center no-repeat;
+   }
+   #myCarousel .carousel-inner h4{
+     font-size: 40px;
+     margin-top: -230px;
+   }
+
+   #myCarousel .carousel-inner p{
+     font-size: 25px;
+     font-weight: bold;
    }
  }
 @media(max-width: 768px) {
   #myCarousel .carousel-inner .item{
     height: 310px;
-  }
+      }
+    #myCarousel .carousel-inner #slide1{
+      background-size: 100% 100%;
+    }
 
-  #myCarousel .carousel-inner #slide1{
-    background: url("../image/hero_small1.jpg") top center no-repeat;
-  }
+    #myCarousel .carousel-inner #slide2{
+      background-size: 100% 100%;
+    }
 
-  #myCarousel .carousel-inner #slide2{
-    background: url("../image/hero_small1.jpg") top center no-repeat;
-  }
-
-  #myCarousel .carousel-inner #slide3{
-    background: url("../image/hero_small1.jpg") top center no-repeat;
-  }
-
-/*#statistics #statistics_image{
-
-}*/
+    #myCarousel .carousel-inner #slide3{
+      background-size: 100% 100%;
+    }
 
   #statistics #statistics_image img{
-    /*float: left !important;*/
     float: none !important;
   }
 
   #web_insight #web_insight_image img{
-    /*float: left !important;*/
     float: none !important;
   }
-
-  #myCarousel .carousel-inner h4{
-    font-size: 35px;
-    margin-top: -100px;
-  }
-
-  #myCarousel .carousel-inner p{
-    font-size: 20px;
-  }
 }
+
+@media(max-width: 767px){
+ footer #web_maintenance{
+   clear: both;
+ }
+ .navbar-form #searchInput{
+    display: inline;
+ }
+ #myCarousel .carousel-inner h4{
+   font-size: 35px;
+   margin-top: -230px;
+ }
+
+ #myCarousel .carousel-inner p{
+   font-size: 20px;
+   font-weight: bold;
+ }
+ }
 
 @media(max-width: 320px){
     #statistics #statistics_image img, #web_insight #web_insight_image img{
@@ -187,25 +204,15 @@ ul.unstyled li{
     #myCarousel .carousel-inner .item{
       height: 250px;
     }
-    /*.navbar-brand img{
-      width: 100px;
-    }*/
-    /*button.navbar-toggle{
-      margin-right: 2px;
-      padding-right: 0px;
-      padding-left: 0px;
-    }*/
-
-    /*ul.navbar-nav{
-      display: block;
-      text-align: left;
-    }*/
-
-    .navbar-form #searchInput{
-      width: 100px;
-      /*margin-left: 50px;*/
+    #myCarousel .carousel-inner h4{
+      font-size: 25px;
+      margin-top: -170px;
     }
 
+    #myCarousel .carousel-inner p{
+      font-size: 14px;
+      font-weight: bold;
+    }
     .siteLogo{
       font-size: 20px;
     }
@@ -239,11 +246,14 @@ ul.unstyled li{
   }
 
   #myCarousel .carousel-inner #slide2{
-    background: url("../image/hero_large1.jpg") top center no-repeat;
+    background: url("../image/Web_designing_large2.png") top center no-repeat;
   }
 
   #myCarousel .carousel-inner #slide3{
-    background: url("../image/hero_large1.jpg") top center no-repeat;
+    background: url("../image/Web_maintenance_large3.png") top center no-repeat;
+  }
+  #myCarousel .carousel-inner h4{
+    margin-top: -300px;
   }
 }
 
@@ -252,6 +262,10 @@ ul.unstyled li{
 /*---------------- General ------------------*/
 .siteName{
   color: red;
+}
+
+.glyphicon{
+  margin-right: 5px;
 }
 
 @font-face {

@@ -10,21 +10,6 @@
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
-
-    <!-- All Javascript at the bottom of the page for faster page loading -->
-
-  	<!-- First try for the online version of jQuery-->
-  	<script src="http://code.jquery.com/jquery.js"></script>
-
-  	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-  	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-
-  	<!-- Bootstrap JS -->
-  	<script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
-
-  	<!-- Custom JS -->
-  	<!-- <script src="includes/js/script.js"></script> -->
-
     <div class="container" id="main">
       <div class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
@@ -46,7 +31,7 @@
           <div class="navbar-collapse collapse navbar-responsive-collapse">   <!-- navbar-responsive-collapse -->
             <ul class="nav navbar-nav navbar-right">
               <li class="active">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="portfolio.html">Portfolio</a>
@@ -54,20 +39,26 @@
               <li>
                 <a href="#">Features</a>
               </li>
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Product</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-ruble" aria-hidden="true"></span>Products</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Blog</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Contact</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-            <!-- <form action="#" class="navbar-form form-horizontal">
+             <form action="#" class="navbar-form form-horizontal">
               <input type="text" id="searchInput" class="form-control" placeholder="Search this site...">
               <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
             </form> <!-- end navbar-form -->
@@ -94,17 +85,19 @@
           </div> <!-- end carousel slide1 -->
 
           <div class="item" id="slide2">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <h4>ST@RWebS</h4>
               <p>From Where The Uniqueness Comes</p>
-            </div> <!-- end carousel-caption -->
+            </div> -->
+             <!-- end carousel-caption -->
           </div> <!-- end carousel slide2 -->
 
           <div class="item" id="slide3">
-            <div class="carousel-caption">
+            <!-- <div class="carousel-caption">
               <h4>ST@RWebS</h4>
               <p>From Where The Uniqueness Comes</p>
-            </div> <!-- end carousel-caption -->
+            </div>  -->
+            <!-- end carousel-caption -->
           </div> <!-- end carousel slide3 -->
 
         </div> <!-- end carousel-inner -->
@@ -113,7 +106,8 @@
         <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
 				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
       </div> <!-- end myCarousel -->
-      <div class="row" id="body">
+
+      <div class="row" id="info">
         <div class="col-md-4 col-lg-4" id="domain_registration">
           <h3>Domain Registration</h3>
           <p>Register your Domain instantly with best Price, enquire us now</p>
@@ -129,7 +123,7 @@
           <p>Get Maintain your website by our professional with fresh content, images</p>
           <button class="btn btn-primary">Read More</button>
         </div>
-      </div> <!-- end body -->
+      </div> <!-- end info -->
 
       <div class="row" id="web_insight">
         <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 pull-right" id="web_insight_content">
@@ -156,9 +150,10 @@
         <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" id="statistics_image">
           <img src="includes/image/revenue.jpg" alt="Revenue" class="pull-right  center-block">
         </div>
-      </div>
-
+      </div> <!-- end statistics -->
     </div> <!-- end main container -->
+
+  <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row" id="footer">
@@ -172,7 +167,7 @@
               <li><a href="#">Disclaimer</a></li>
               <li><a href="#">Feedback</a></li>
             </ul>
-          </div>
+          </div> <!-- end footer-starwebs -->
           <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6" id="web_design">
             <h4>Web Design</h4>
             <ul class="unstyled">
@@ -180,7 +175,7 @@
               <li><a href="#">Customised Workflow Automations</a></li>
               <li><a href="#">Cutomised Web Based Applications</a></li>
             </ul>
-          </div>
+          </div> <!-- end footer-web_design -->
           <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6" id="web_maintenance">
             <h4>Web Maintenance</h4>
             <ul class="unstyled">
@@ -189,7 +184,7 @@
               <li><a href="#">Claud Infrastructure Management</a></li>
               <li><a href="#">Website Redesign</a></li>
             </ul>
-          </div>
+          </div> <!-- end footer-web_maintenance -->
           <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 likes" id="likes">
             <h4>Like us on</h4>
             <ul class="unstyled">
@@ -198,11 +193,19 @@
               <li><a href="#"><img src="includes/image/logo_g+.png" alt="Google+" class="img-rounded"></a></li>
               <li><a href="#"><img src="includes/image/logo_linkedin.png" alt="Linkedin" class="img-rounded"></a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+          </div> <!-- end footer-likes -->
+        </div> <!-- end footer-row -->
+      </div> <!-- end container -->
+    </footer> <!-- end footer -->
 
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.11.3.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
 
   </body>
 </html>
