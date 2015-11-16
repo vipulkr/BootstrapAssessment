@@ -54,6 +54,14 @@
   text-align: justify;
 }
 
+#domainName{
+  width: 300px;
+}
+
+#close{
+  color: red;
+}
+
 /*------------------- Web Insight ---------------------*/
 
 #web_insight{
